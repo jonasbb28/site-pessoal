@@ -1,8 +1,19 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
 * {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: 100% 100%;
 }
 
 nav {
@@ -18,12 +29,15 @@ nav > a {
 header{
     background-color: #4CAF50;
     color: white;
+    border-radius: 20px;
     padding: 15px;
+    margin: 10px 10px 10px 10px;
 }
 
 header > p{
     padding: 10px;
-    text-align: center;
+    text-align: justify;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .container {
@@ -31,22 +45,36 @@ header > p{
 }
 
 main {
-    background-color: whitesmoke;
     padding: 1em;
-    height: 300px;
-}
-
-main > aside {
-    display: inline-block;
-    
+    height: 600px;
 }
 
 section {
-    margin-bottom: 1em;
+    margin: auto;
+    background-color: gray;
+    width: 80%;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section > aside, article {
+    padding: 10px;
+}
+
+div#separador {
+    margin: auto;
+    width: 90%;
+    background-color: rgb(68, 68, 255);
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+    border-radius: 100px;
 }
 
 footer {
     background-color: #f1f1f1;
     text-align: center;
     padding: 0.5em;
-  }
+}
