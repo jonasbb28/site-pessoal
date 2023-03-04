@@ -9,11 +9,8 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background-color: black;
-    background-position: center top;
-    background-repeat: repeat;
-    background-size: 100% 100%;
 }
 
 nav {
@@ -58,7 +55,12 @@ section {
     border-bottom-right-radius: 10px;
 }
 
-section > aside, article {
+section > aside {
+    width: 25%;
+}
+
+section > article {
+    width: 25%;
     padding: 10px;
 }
 
